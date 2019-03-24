@@ -15,7 +15,7 @@ int main()
     cout << "-----" << endl;
     char m = 77;    //must be uppercase m (M)
     char y = 121;   //lowercase y (y)
-    char q = 32;   //space
+    /* space */ char q = /*space*/  32;   //space
     char n = 110;   //lowercase n (n)
     char a = 97; //lowercase a (a)
     char k = 109; //lowercase m (m)
@@ -25,10 +25,10 @@ int main()
     char s = 115;   //lowercase s (s)
     //space
     char g = 71;     //must be upperase n (B)
-    //i _ 10
+    //i _ ... (next one)
     char v = 118;  //lowercase v (v)
+    /*i _ ... (next one) */
     char o = 33;    //placing ('!') !!!!!!
-    //i _ 12
 
     cout<< m<<y<<q<<n<<a<<k<<e<<q<<i<<s<<q<<g<<i<<v<<i<<o <<endl;
 
