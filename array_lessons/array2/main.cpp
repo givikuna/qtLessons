@@ -6,7 +6,7 @@ int main()
 {
 
     int a = 5;
-    cout<<"before +1: "<<a<<endl;
+    cout<<"before everything: "<<a<<endl;
     a = a+1;
     cout<<"after +1: "<<a<<endl;
     a++;

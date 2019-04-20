@@ -10,6 +10,11 @@ int main()
 
    //gza ori
 
+
+   //
+
+
+
    char arr2[17];
 
            arr2[0]=77;
@@ -39,6 +44,9 @@ int main()
 
            /* 1)"done" 2)"" */
    cout<<arr<<endl;
+   //
+   cout<<"\n\r";
+   //
    cout<<arr2<<endl;
 
     return 0;
