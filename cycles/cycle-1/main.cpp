@@ -21,7 +21,7 @@ int main()
 
     for (int l=0;l<10;l++)
     {
-        arr1[l] = l - ;
+        arr1[l] = l - 10;
     }
 
     //
@@ -36,5 +36,19 @@ int main()
     }
 
     // initialize
+
+    //
+
+    //
+
+    //
+
+    cout<<"\n\r";
+
+    //
+
+    //
+
+    //
     return 0;
 }
