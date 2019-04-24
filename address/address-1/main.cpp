@@ -61,8 +61,6 @@ int main()
     {
         cout<<&arr1[H]<<endl;
     }
-    ////////////////////////
-
 
     return 0;
 }
