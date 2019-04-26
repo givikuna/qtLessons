@@ -2,27 +2,46 @@
 
 using namespace std;
 
+int addition(int t, int u)// t=k and u = b
+{
+    return (t + u);
+}
+
+int subtraction(int k, int b)
+{
+    int c = k - b;
+    return c;
+}
+
+int multiply(int k, int b)
+{
+    int c = k * b;
+    return c;
+}
+
+int divide(int k, int b)
+{
+    int c = k / b;
+    return c;
+}
+
 int main()
 {
-    int k;
     //cout << "enter any number: ";
 
     cout<<"ENTER two different numbers and then they will be added, multyplied, divided, or subtracted"<<endl;//kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
 
     cout<<"addition"<<endl;
 
+    int k;
     cout<<"enter first number ";
     cin>>k;
-    cout<<"your first number is: "<<k<<endl;
+
     int b;
     cout<<"enter second number ";
     cin>>b;
-    cout<<"your second number is: "<<b<<endl;
 
-    int c;
-    c = k + b;
-
-    cout<<"first + second = "<<c<<endl;
+    cout<<"first + second = "<<addition(k,b)<<endl;
 
     //
 
@@ -34,14 +53,11 @@ int main()
 
     cout<<"enter first number ";
     cin>>k;
-    cout<<"your first number is: "<<k<<endl;
 
     cout<<"enter second number ";
     cin>>b;
-    cout<<"your second number is: "<<b<<endl;
 
-    c = k - b;
-    cout<<"first - second = "<<c<<endl;
+    cout<<"first - second = "<<subtraction(k,b)<<endl;
 
     //
 
@@ -51,6 +67,8 @@ int main()
 
     cout<<"multiply"<<endl;
 
+    int c = multiply(k,b);
+
     cout<<"enter first number ";
     cin>>k;
     cout<<"your first number is: "<<k<<endl;
@@ -59,7 +77,6 @@ int main()
     cin>>b;
     cout<<"your second number is: "<<b<<endl;
 
-    c = k * b;
     cout<<"first * second = "<<c<<endl;
 
     //
@@ -70,6 +87,8 @@ int main()
 
     cout<<"divide"<<endl;
 
+    c = divide(k,b);
+
     cout<<"enter first number ";
     cin>>k;
     cout<<"your first number is: "<<k<<endl;
@@ -78,8 +97,11 @@ int main()
     cin>>b;
     cout<<"your second number is: "<<b<<endl;
 
-    c = k / b;
+
     cout<<"first / second = "<<c<<endl;
+
+    // for tomorrow > < <= >=
+
 
     return 0;
 }
