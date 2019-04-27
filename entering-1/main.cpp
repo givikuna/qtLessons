@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 using namespace std;
@@ -67,8 +68,6 @@ int main()
 
     cout<<"multiply"<<endl;
 
-    int c = multiply(k,b);
-
     cout<<"enter first number ";
     cin>>k;
     cout<<"your first number is: "<<k<<endl;
@@ -76,6 +75,8 @@ int main()
     cout<<"enter second number ";
     cin>>b;
     cout<<"your second number is: "<<b<<endl;
+
+    int c = multiply(k,b);
 
     cout<<"first * second = "<<c<<endl;
 
@@ -87,8 +88,6 @@ int main()
 
     cout<<"divide"<<endl;
 
-    c = divide(k,b);
-
     cout<<"enter first number ";
     cin>>k;
     cout<<"your first number is: "<<k<<endl;
@@ -97,6 +96,7 @@ int main()
     cin>>b;
     cout<<"your second number is: "<<b<<endl;
 
+    c = divide(k,b);
 
     cout<<"first / second = "<<c<<endl;
 
