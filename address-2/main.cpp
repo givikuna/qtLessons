@@ -2,8 +2,33 @@
 
 using namespace std;
 
+int mult(int i)
+{
+    int y = i * i;
+    return y;
+}
+
+int hi(int t, int o)
+{
+    int lI = t + o;
+    return lI;
+}
+
 int main()
 {
+/*
+    //
+
+    //q_i, jk_y  ;  //
+
+    int q = 2;
+    int gt = 1;
+    int jk = hi(q,gt);
+
+    cout<<jk<<endl;
+
+    //
+
     int n = 10;
     cout<<"value of n = "<<n<<endl;
     cout<<"address of n = "<<&n<<endl;
@@ -55,6 +80,20 @@ int main()
     // 2. find function address,
     // 3. declar paramreters,
     // 4. assign values.
+
+    int x = 6;
+    int p = mult(x);
+
+    cout<<p<<endl;
+*/
+    int test = 10;
+    cout<<test<<endl;
+
+    int* pointToTest = &test;
+    int test2 = (*pointToTest);
+    cout<<test2<<endl;
+
+    //
 
     return 0;
 }
