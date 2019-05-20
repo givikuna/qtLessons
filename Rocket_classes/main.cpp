@@ -13,7 +13,7 @@ int GetRandom()
 struct Rocket
 {
 public:
-    Rocket(){                    
+    Rocket(){
         m_planetsTraveled = 0;
         cout<<"started starter planet is: planet "<<m_planetsTraveled<<" (Earth) "<<endl;
         cout<<"\n";
