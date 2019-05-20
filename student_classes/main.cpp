@@ -38,6 +38,17 @@ public:
         }
     }
 
+    int m_test1MATH;
+    int m_test2MATH;
+    int m_test3MATH;
+    int m_test4MATH;
+    int m_ExamMATH;
+    int m_Experiment1SCIENCE;
+    int m_Experiment2SCIENCE;
+    int m_Experiment3SCIENCE;
+    int m_Experiment4SCIENCE;
+    int m_Experiment5SCIENCE;
+
 };
 
 int main()
