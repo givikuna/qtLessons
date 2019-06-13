@@ -13,7 +13,8 @@ int main()
     {
         for (int i=0; i<max; i++)
         {
-            if ( arr1[i] > arr1[i+1] ) {
+            if ( arr1[i] > arr1[i+1] )
+            {
                 int tmp = arr1[i];
                 arr1[i] = arr1[i+1];
                 arr1[i+1] = tmp;
