@@ -14,6 +14,28 @@ public:
     {
         return m_currentSpeed;
     }
+    cout<<"current speed is: "<<m_currentSpeed<<endl;
+
+}
+// properties / members
+int m_currentSpeed;
+int m_maxSpeed;
+int m_doors;
+};
+
+int main()
+{
+Car ferary;
+for(;;)
+{
+    char confirm;
+    cout<<"continue speed up? y/n ";
+    cin>>confirm;
+    if(confirm == 'y') {
+        ferary.speedUp();
+    }
+    else {
+
     void pushBreak()
     {
         m_currentSpeed = 0;
@@ -21,29 +43,7 @@ public:
     }
     void speedUp()
     {
-        m_currentSpeed += 1;
-        cout<<"current speed is: "<<m_currentSpeed<<endl;
-
-    }
-    // properties / members
-    int m_currentSpeed;
-    int m_maxSpeed;
-    int m_doors;
-};
-
-int main()
-{
-    Car ferary;
-    for(;;)
-    {
-        char confirm;
-        cout<<"continue speed up? y/n ";
-        cin>>confirm;
-        if(confirm == 'y') {
-            ferary.speedUp();
-        }
-        else {
-            break;
+        m_currentSpeed += 1;break;
         }
         cout<<"break speed? y/n ";
         cin>>confirm;

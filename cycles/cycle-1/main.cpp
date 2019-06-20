@@ -11,24 +11,16 @@ int main()
      cout<<arr[i]<<endl;
     }
 
-    //
-
     cout<<"\n\r";
-
-    //
 
     int arr1[10];
 
-    for (int l=0;l<10;l++)
+    for (int i=0;i<10;i++)
     {
-        arr1[l] = l - 10;
+        arr1[i] = i - 10;
     }
 
-    //
-
     cout<<"\n\r";
-
-    //
 
     for (int l=0;l<10;l++)
     {
@@ -37,18 +29,7 @@ int main()
 
     // initialize
 
-    //
-
-    //
-
-    //
-
     cout<<"\n\r";
 
-    //
-
-    //
-
-    //
     return 0;
 }

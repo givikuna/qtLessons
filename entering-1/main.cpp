@@ -30,7 +30,7 @@ int main()
 {
     //cout << "enter any number: ";
 
-    cout<<"ENTER two different numbers and then they will be added, multyplied, divided, or subtracted"<<endl;//kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    cout<<"ENTER two different numbers and then they will be added, multyplied, divided, or subtracted"<<endl;
 
     cout<<"addition"<<endl;
 
