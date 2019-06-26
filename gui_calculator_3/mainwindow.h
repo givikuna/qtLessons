@@ -17,9 +17,35 @@ public:
 
 private slots:
 
-    void on_buttonFive_clicked();
+    void on_button5_clicked();
 
     void on_buttonPlus_clicked();
+
+    void on_AC_clicked();
+
+    void on_divide_clicked();
+
+    void on_multiply_clicked();
+
+    void on_minus_clicked();
+
+    void on_button1_clicked();
+
+    void on_button2_clicked();
+
+    void on_button3_clicked();
+
+    void on_button4_clicked();
+
+    void on_button6_clicked();
+
+    void on_button7_clicked();
+
+    void on_button8_clicked();
+
+    void on_button9_clicked();
+
+    void on_button0_clicked();
 
 private:
     Ui::MainWindow *ui;
