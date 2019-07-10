@@ -47,9 +47,15 @@ private slots:
 
     void on_button0_clicked();
 
+    void on_ENT_clicked();
+
+    void on_ButtonPoint_clicked();
+
 private:
     Ui::MainWindow *ui;
     bool m_action;
+    double m_first;
+    int m_mathAction;
 };
 
 #endif // MAINWINDOW_H
