@@ -8,6 +8,65 @@
         var answer = 0.00;
         var IDKdarn = "0";
         
+        function plus() {
+            var frameEdit = document.getElementById("fname");
+            var frameEditString = "";
+            frameEdit.value = frameEditString;
+            var frameEdit2 = frameEdit.value;
+            var mover = frameEdit2;
+            var skip = "+";
+            var IDKdarn = ".";
+            }
+
+            function minus() {
+            var frameEdit = document.getElementById("fname");
+            var frameEditString = "";
+            frameEdit.value = frameEditString;
+            var frameEdit2 = frameEdit.value;
+            var mover = frameEdit2;
+            var skip = "-";
+            var IDKdarn = ".";
+            }
+
+            function multiply() {
+            var frameEdit = document.getElementById("fname");
+            var frameEditString = "";
+            frameEdit.value = frameEditString;
+            var frameEdit2 = frameEdit.value;
+            var mover = frameEdit2;
+            var skip = "*";
+            var IDKdarn = ".";
+            }
+
+            function divide() {
+            var frameEdit = document.getElementById("fname");
+            var frameEditString = "";
+            frameEdit.value = frameEditString;
+            var frameEdit2 = frameEdit.value;
+            var mover = frameEdit2;
+            var skip = "/";
+            var IDKdarn = ".";
+            }
+
+            function answerFindFunction() {
+                var frameEdit = document.getElementById("fname");
+                    var frameEditString = "";
+                    var frameEditString = frameEdit.value;
+                if (skip == "+"){
+                    var answer = mover + frameEditString;
+                }    
+                else if (skip == "-") {
+                    var answer = mover - frameEditString;
+                }         
+                else if (skip == "/") {
+                    var answer = mover / frameEditString;
+                }    
+                else if (skip == "*") {
+                    var answer = mover * frameEditString;
+                }         
+                var answer = frameEdit.value;
+                               }
+
     </script>
 
     <head>
