@@ -3,216 +3,32 @@
 
     <script>
         
-        var skip = "0";
-        var mover = 0.00;
-        var answer = 0.00;
-        var IDKdarn = "0";
+        var oldValue = 0.00;
+        var action = "";
 
-                function one() {
-                if (IDKdarn == ".") {
+            function one() {
+                if (action != "") {
                     var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
                     frameEdit.value = "1";
                 }
 
                 else {
                     var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
                     frameEdit.value = frameEdit.value+"1";
                 }
-                }
-
-            function two() {
-                if (IDKdarn == ".") {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = "2";
-                }
-
-                else {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = frameEdit.value+"2";
-                }
-                }
-
-            function three() {
-                if (IDKdarn == ".") {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = "3";
-                }
-
-                else {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = frameEdit.value+"3";
-                }
-                }
-
-            function four() {
-                if (IDKdarn == ".") {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = "4";
-                }
-
-                else {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = frameEdit.value+"4";
-                }
-                }
-
-            function five() {
-                if (IDKdarn == ".") {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = "5";
-                }
-
-                else {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = frameEdit.value+"5";
-                }
-                }
-
-            function six() {
-                if (IDKdarn == ".") {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = "6";
-                }
-
-                else {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = frameEdit.value+"6";
-                }
-                }
-
-            function seven() {
-                if (IDKdarn == ".") {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = "7";
-                }
-
-                else {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = frameEdit.value+"7";
-                }
-                }
-
-            function eight() {
-                if (IDKdarn == ".") {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = "8";
-                }
-
-                else {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = frameEdit.value+"8";
-                }
-                }
-
-            function nine() {
-                if (IDKdarn == ".") {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = "9";
-                }
-
-                else {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = frameEdit.value+"9";
-                }
-                }
-
-            function zero() {
-
-                if (IDKdarn == ".") {
-                var frameEdit = document.getElementById("fname");
-                var frameEditString = "";
-                var frameEditString = frameEdit.value;
-                frameEdit.value = "0";
-                }
-
-                else {
-                    var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                    frameEdit.value = frameEdit.value+"0";
-                }
-                }
+            }
 
             //--------------------------------------------------
             //Math Functions
             //--------------------------------------------------
         
         function plus() {
+                action = "+";
                 var frameEdit = document.getElementById("fname");
-                var frameEditString = "";
-                frameEdit.value = frameEditString;
-                var frameEdit2 = frameEdit.value;
-                var mover = frameEdit2;
-                var skip = "+";
-                var IDKdarn = ".";
+                oldValue = frameEdit.value;
             }
 
-            function minus() {
-                var frameEdit = document.getElementById("fname");
-                var frameEditString = "";
-                frameEdit.value = frameEditString;
-                var frameEdit2 = frameEdit.value;
-                var mover = frameEdit2;
-                var skip = "-";
-                var IDKdarn = ".";
-            }
-
-            function multiply() {
-                var frameEdit = document.getElementById("fname");
-                var frameEditString = "";
-                frameEdit.value = frameEditString;
-                var frameEdit2 = frameEdit.value;
-                var mover = frameEdit2;
-                var skip = "*";
-                var IDKdarn = ".";
-            }
-
-            function divide() {
-                var frameEdit = document.getElementById("fname");
-                var frameEditString = "";
-                frameEdit.value = frameEditString;
-                var frameEdit2 = frameEdit.value;
-                var mover = frameEdit2;
-                var skip = "/";
-                var IDKdarn = ".";
-            }
-
+          
             //--------------------------------------------------
             //Other
             //--------------------------------------------------
@@ -226,22 +42,22 @@
 
             function answerFindFunction() {
                 var frameEdit = document.getElementById("fname");
-                    var frameEditString = "";
-                    var frameEditString = frameEdit.value;
-                if (skip == "+"){
-                    var answer = mover + frameEditString;
-                }    
-                else if (skip == "-") {
-                    var answer = mover - frameEditString;
+                var frameEditString = frameEdit.value;
+                var answer = 0.00;
+                if (action == "+"){
+                    answer = oldValue + frameEditString;
+                 }    
+                else if (action == "-") {
+                    answer = oldValue - frameEditString;
                 }         
-                else if (skip == "/") {
-                    var answer = mover / frameEditString;
+                else if (action == "/") {
+                    answer = oldValue / frameEditString;
                 }    
-                else if (skip == "*") {
-                    var answer = mover * frameEditString;
+                else if (action == "*") {
+                    answer = oldValue * frameEditString;
                 }         
-                var answer = frameEdit.value;
-                               }
+                frameEdit.value = answer;
+            }
 
     </script>
 
