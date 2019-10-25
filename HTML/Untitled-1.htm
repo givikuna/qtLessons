@@ -1,17 +1,156 @@
 <!DOCTYPE html>
 <html>
 
+    <style>
+body {
+                            background-color: black;
+                        }
+                        
+                        h1 {
+                            color: white;
+                            text-align: center;
+                        }
+            
+                        h2 {
+                            color: white;
+                            text-align: center;
+                        }
+            
+                        h3 {
+                            color: white;
+                            text-align: center;
+                        }
+            
+                        h4 {
+                            color: red;
+                            text-align: center;
+                        }
+            
+                        p {
+                            font-family: verdana;
+                            font-size: 20px;
+                        }
+            
+                        button {
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            font-size: 40px;
+                            background-color:black;
+                            height: 100px;
+                            width: 100px;
+                            border-color: white;
+                        }
+            
+                        table {
+                            font-family: arial, sans-serif;
+                            border-collapse: collapse;
+                            width: 100%;
+                            color: black;
+                        }
+                        
+                        .button2 {
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            font-size: 40px;
+                            background-color:black;
+                            height: 100px;
+                            width: 500px;
+                            border-color: white;
+                        }
+            
+                        .button3 {
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            font-size: 40px;
+                            background-color:black;
+                            height: 100px;
+                            width: 300px;
+                            border-color: white;
+                        }
+                        .button4 {
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            font-size: 40px;
+                            background-color:black;
+                            height: 100px;
+                            width: 300px;
+                            border-color: black;
+                        }
+            
+                        td, th {
+                            border: 1px solid #dddddd;
+                            text-align: left;
+                            padding: 10px;
+                            -webkit-text-fill-color: gold;
+                        }
+            
+                        .td2 {
+                            border: 1px solid #dddddd;
+                            text-align: left;
+                            padding: 8px;
+                            -webkit-text-fill-color: black;
+                        }
+                        
+                        tr:nth-child(even) {
+                            background-color: #dddddd;
+                        }
+            
+                        table {
+                            border-spacing: 10px;
+                            border-collapse: collapse;
+                            width: 50%;
+                        }
+            
+                        a:link {
+                            background-color: transparent;
+                            text-decoration: none;
+                        }
+            
+                        a:visited {
+                            color: red;
+                            background-color: transparent;
+                            text-decoration: none;
+                        }
+                        a:hover {
+                            color: white;
+                            background-color: transparent;
+                            text-decoration: underline;
+                        }
+            
+                        input {
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            font-size: 40px;
+                            background-color:black;
+                            height: 100px;
+                            width: 100px;
+                            border-color: white;
+                            text-emphasis-color: white;
+                            text-decoration-color: white;
+                            -webkit-text-fill-color: white;
+                            -webkit-text-stroke-color: white;
+                        }
+
+                        .input2 {
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            font-size: 40px;
+                            background-color:black;
+                            height: 100px;
+                            width: 1800px;
+                            border-color: white;
+                            text-emphasis-color: white;
+                            text-decoration-color: white;
+                            -webkit-text-fill-color: white;
+                            -webkit-text-stroke-color: white;
+                        }
+    </style>
+        
     <script>
         
-        var oldValue = 0.00;
-        var action = "";
+        var _oldValue = 0.00;
+        var _action = "0";
 
             //--------------------------------------------------
             //Num
-            //--------------------------------------------------
+            //----- ---------------------------------------------
         
             function numberPrinter(num) {
-                if (action != "") {
+                if (_action != "0") {
                     var frameEdit = document.getElementById("fname");
                     frameEdit.value = num;
                 }
@@ -27,9 +166,12 @@
             //--------------------------------------------------
         
         function mathFunctions(actionFromButton) {
+            if (_action != "0") {
+                CalcFunction();
+            }
                 var frameEdit = document.getElementById("fname");
-                oldValue = frameEdit.value;
-                action = actionFromButton;
+                _oldValue = frameEdit.value;
+                _action = actionFromButton;
             }
 
           
@@ -43,17 +185,17 @@
                 var answer = 0.00;
                 parseFloat(frameEditString);
                 
-                if (action == "+"){
-                    answer = parseFloat(oldValue) + parseFloat(frameEditString);
+                if (_action == "+"){
+                    answer = parseFloat(_oldValue) + parseFloat(frameEditString);
                  }    
-                else if (action == "-") {
-                    answer = parseFloat(oldValue) - parseFloat(frameEditString);
+                else if (_action == "-") {
+                    answer = parseFloat(_oldValue) - parseFloat(frameEditString);
                 }         
-                else if (action == "/") {
-                    answer = parseFloat(oldValue) + parseFloat(frameEditString);
+                else if (_action == "/") {
+                    answer = parseFloat(_oldValue) + parseFloat(frameEditString);
                 }    
-                else if (action == "*") {
-                    answer = oldValue * frameEditString;
+                else if (_action == "*") {
+                    answer = parseFloat(_oldValue) * parseFloat(frameEditString);
                 }         
                 frameEdit.value = answer;
             }
@@ -66,7 +208,7 @@
     </head>
     <body>
         <br>    <form name="myForm" action="#" method="get">
-                Name: <input type="text" name="fname" id="fname"><br>
+                Name: <input type="text" name="fname" id="fname" class="input2"><br>
         <table> 
                 <tr> 
                     <th colspan="3"><input type="text" id="result"/></th> 
